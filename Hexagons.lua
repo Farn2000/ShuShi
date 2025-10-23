@@ -72,11 +72,7 @@ local function AddDraggingFunctionality(DragPoint, Main)
     )
 end
 local library = {
-    Theme = {
-        Dark = {
-            Main = Color3.fromRGB(11, 11, 15)
-        }
-    }
+
 }
 
 local Cryo = Instance.new("ScreenGui")
@@ -401,7 +397,6 @@ function library:Window(Options)
         Name = Options.Name or "ShuShi",
         ImageLogo = Options.ImageLogo or "",
         TextLogo = Options.TextLogo or "S",
-        Theme = Options.Theme or library.Theme.Dark,
         Keybind = Options.Keybind or Enum.KeyCode.RightShift,
         UsingTopbar = Options.UsiingTopbar or true,
         KeybindUI = Options.KeybindUI or false
