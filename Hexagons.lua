@@ -925,7 +925,7 @@ end
     UIPadding_5.Parent = KeybindContainer
     UIPadding_5.PaddingTop = UDim.new(0, 3)
     UIPadding_5.PaddingLeft = UDim.new(0, 3)
-
+if cfg.KeybindUI then
     function library:ToggleKeybindUI(state)
         if state then
             KeybindLists.Visible = true
@@ -944,6 +944,7 @@ end
             KeybindLists.Visible = false
         end
     end
+end
     function library:AddKeyItem(Options)
         local keyitem = {}
         local cfg = {Name = Options.Name or "Keybind", Keybind = Options.Keybind or Enum.KeyCode.E}
